@@ -1,0 +1,144 @@
+
+.buy-ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 15px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo p {
+  color: #c3c3c3;
+  font-size: 1.5rem;
+}
+
+.logo button.back-button {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.ticket-back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.ticket-back button.home-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ticket-back .home-button .buy-ticket-home-button {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+
+.buy-ticket-title{
+  font-size: 2rem;
+}
+
+.ticket-back .buy-ticket-cjlogo {
+  width: 59.4px;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+
+}
+
+  /*MovieCard*/
+  .movie-list{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: -20px;
+    row-gap: 30px;
+    justify-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .movie-card {
+    width: 300px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 10px 12px;
+  }
+  
+  .movie-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    opacity: 0.9;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /*TicketToolbar*/
+  .ticket-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 10px;
+  }
+  
+  .ghost-button {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #444;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.2s;
+  }
+  
+  .ghost-button:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  

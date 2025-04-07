@@ -1,0 +1,166 @@
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #111;
+  }
+  
+  
+  .app-container {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*TrailerPlayer.jsx*/
+  .trailer-container {
+    width: 100%;
+    height: calc(1080px * 9 / 16);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .trailer-player {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .trailer-player video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .unmute-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    cursor: pointer;
+    user-select: none; 
+  }
+
+  .home > *:not(.trailer-container) {
+    position: relative;
+  }
+  
+    /*Header.jsx*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px; 
+    user-select: none; 
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo p{
+    color: #c3c3c3;
+    font-size: 1.2rem;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .date-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-time {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  /*MainMenu.jsx*/
+  .main-menu h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 300;
+    font-size: 4rem;
+    user-select: none; 
+  }
+
+  .menu-grid {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 40px;
+    justify-items: center;
+  }
+
+  .menu-button {
+    width: 250px;
+    height: 400px;
+    font-size: 28px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
+    -webkit-tap-highlight-color: transparent; 
+    touch-action: manipulation;
+    user-select: none; 
+  }
+  .menu-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /*LanguageSelector.jsx*/
+  .language-selector {
+    padding-top: 450px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 120px;
+    gap: 20px;
+    user-select: none; 
+  }
+  
+  .language-selector button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .language-selector button.selected {
+    color: #000; 
+    font-weight: bold;
+  }
